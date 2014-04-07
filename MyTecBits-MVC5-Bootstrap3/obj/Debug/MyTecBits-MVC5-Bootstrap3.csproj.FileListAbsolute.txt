@@ -157,6 +157,6 @@ C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\bin\Micros
 C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\obj\Debug\MyTecBits-MVC5-Bootstrap3.csprojResolveAssemblyReference.cache
 C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\obj\Debug\MyTecBits-MVC5-Bootstrap3.dll
 C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\obj\Debug\MyTecBits-MVC5-Bootstrap3.pdb
+C:\Users\badamski\Documents\GitHub\bewoirav\MyTecBits-MVC5-Bootstrap3\obj\Debug\MyTecBits-MVC5-Bootstrap3.csprojResolveAssemblyReference.cache
