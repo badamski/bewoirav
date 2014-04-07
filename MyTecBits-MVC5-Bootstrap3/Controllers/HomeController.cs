@@ -14,6 +14,12 @@ namespace MyTecBits_MVC5_Bootstrap3.Controllers
             return View();
         }
 
+        public ActionResult WorkflowCommands()
+        {
+            return View();
+        }
+
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
