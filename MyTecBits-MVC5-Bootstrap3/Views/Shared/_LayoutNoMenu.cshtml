@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+@*    <div style ="margin:auto; text-align:center"> 
+            <h1><span class="glyphicon glyphicon-cloud" style="vertical-align:top"></span> Vario.Web</h1>
+    </div>*@
+
+    <div class="container body-content">
+
+        @RenderBody()
+        <hr />
+        <footer>
+            <small>&copy; @DateTime.Now.Year - Docusoft</small>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
