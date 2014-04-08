@@ -12,14 +12,19 @@
 <div class="panel panel-default">
     <div class="panel-heading">
        <div class="row">
-         <div class="col-md-11">
-             <div>
-             <a data-toggle="collapse" data-parent="#accordion" href="@("#collapse" + command.Id)" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-collapse-down"></i> ROZWIŃ</a>
-             <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-file"></span> @command.RelatedObjectName</a>
-             </div>
-             <h4>@command.CommandName</h4>
-             <small> dodane @command.Date przez <i class="glyphicon glyphicon-user"></i> @command.Author</small>
+         <div class="col-md-8">
+@*             <a data-toggle="collapse" data-parent="#accordion" href="@("#collapse" + command.Id)" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-collapse-down"></i> ROZWIŃ</a>*@
+                <h3 style ="margin-top:3px"> @command.CommandName</h3>
+
+                 
+             <p style="margin-top:10px"> <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-file"></span> @command.RelatedObjectName</a> || @command.Date przez <i class="glyphicon glyphicon-user"></i> @command.Author</p>
             </div>
+                  <div class="col-md-4">
+            <div class="btn-group btn-group-justified" style="margin-top:10px;" >
+                <a href="#" class="btn btn-lg btn-info">Otwórz</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="@("#collapse" + command.Id)" class="btn btn-lg btn-info">Szczegóły</a>
+            </div>
+         </div>
       </div>
     </div>   
     <div id="@("collapse" + command.Id)" class="panel-collapse collapse out">
