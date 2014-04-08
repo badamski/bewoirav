@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyTecBits_MVC5_Bootstrap3.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,18 +9,28 @@ namespace MyTecBits_MVC5_Bootstrap3.Controllers
 {
     public class WorkflowController : Controller
     {
+        private TestDataSource _dataSource;
+
+        public WorkflowController()
+        {
+            _dataSource = new TestDataSource();
+        }
         //
         // GET: /Workflow/
         public ActionResult Index()
         {
-            return View();
+            var result = _dataSource.GetCommands();
+
+            return View(result);
         }
 
         //
         // GET: /Workflow/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var result = _dataSource.GetObject(id);
+
+            return View(result);
         }
 
         //

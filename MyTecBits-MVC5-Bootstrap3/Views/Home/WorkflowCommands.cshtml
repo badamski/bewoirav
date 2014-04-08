@@ -5,48 +5,43 @@
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
-       <div class="row">   
-         <div class="col-md-8">
-             <div class="panel-title">
-                    <span class="label label-info"><span class="glyphicon glyphicon-file"></span> pyszne_ciastko.exe</span>
-                    <small> - 04.04.2014 przez E. Wedel</small>
+       <div class="row">
+         <div class="col-md-11">
+             <div>
+             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-collapse-down"></i> ROZWIŃ</a>
+             <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-file"></span> FV KOSZTOWA TST MD 002 1903</a>
              </div>
-             <h4>Zjedz ciaskto, no zjedz! OM NOM NOM NOM NOM</h4>
+             <h4>Proszę o uzupełnienie danych na załączonej fakturze kosztowej</h4>
+             <small> dodane 04.04.2014 przez <i class="glyphicon glyphicon-user"></i> E. Patyra</small>
             </div>
-         <div class="col-md-4">
-            <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-lg btn-info">Otwórz</a>
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="btn btn-lg btn-info">Szczegóły</a>
-            </div>
-         </div>
       </div>
     </div>
     <div id="collapseOne" class="panel-collapse collapse out">
-      <div class="panel-body">
-          <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+      <div class="panel-body" style ="margin:0 auto;">
+@*          <ul class="nav nav-tabs" style="margin-bottom: 15px;">
   <li class="active"><a href="#home" data-toggle="tab">Szczegóły</a></li>
-  <li class=""><a href="#profile" data-toggle="tab">Inna rzecz</a></li>
-  <li class=""><a href="#profile" data-toggle="tab">Jeszcze inna</a></li>
-    </ul>
+    </ul>*@
           <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
-                      <div class="metro-tile col-md-3" style="display:block;height:200px">
+                  <div class="row"> 
+                      <div class="col-md-4">    
+                      <div class="metro-tile" style="display:block;height:200px">
                           <a href="#" style="display:block;height:100%">
                               <h3>Faktura</h3>
                               <h1><span class="glyphicon glyphicon-file"></span></h1>
                               <p>FV KOSZTOWA TST MD 003 1903</p></a></div>
-                      <div class="col-md-8">@Html.Partial("Details")</div>
-              </div>
-              <div class="tab-pane fade" id="profile">
-                <p>l wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                      </div>
+                      <div class="col-md-8">@Html.Action("Details", "Workflow", new { id = 1 })</div>
+                  </div>
+                  <hr />
               </div>
             </div>
-      </div>
-                  <div class="btn-group btn-group-justified">
+         <div class="btn-group btn-group-justified"">
                 <a href="#" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span> Odrzuć</a>
-                <a href="#" class="btn btn-sm btn-default">Popraw</a>
+                <a href="#" class="btn btn-sm btn-info">Prześlij do poprawy</a>
                 <a href="#" class="btn btn-sm btn-success">Akceptuj <span class="glyphicon glyphicon-ok"></span></a>
          </div>
+      </div>
     </div>
   </div>
   <div class="panel panel-default">

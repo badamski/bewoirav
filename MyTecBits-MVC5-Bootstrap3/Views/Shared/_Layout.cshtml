@@ -9,6 +9,10 @@
 
 </head>
 <body>
+
+    <div class="container">
+    <div class="row">
+        <div class="span6 offset3">
 <div class="navbar navbar-default">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -20,23 +24,16 @@
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="@Url.Action("WorkflowCommands", "Home")"><span class="glyphicon glyphicon-list"></span> Polecenia  <span class="badge" style="vertical-align:text-top">13</span></a></li>
+      <li><a href="@Url.Action("Index", "Workflow")"><span class="glyphicon glyphicon-comment"></span> Polecenia  <span class="badge" style="vertical-align:text-top">21</span></a></li>
       <li><a href="#"><span class="glyphicon glyphicon-search"></span> Szukaj</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Teczka</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
         @Html.Partial("_LoginPartial")
-@*        <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" style="vertical-align:top"></span> Bartłomiej Adamski  <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Ustawienia</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Wyloguj</a></li>
-        </ul>
-      </li>*@
-    </ul>
   </div>
 </div>
+            </div>
+         </div>
+         </div>
 @*       <div class="container">            
         <div class="masthead">
             <h3 class="text-muted">@Html.ActionLink("Application Name", "Index", "Home")</h3>

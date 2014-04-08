@@ -5,6 +5,21 @@ Blog - hardeepasrani.blogspot.com
 Download This At - css-box.blogspot.com
 ----------------------------------------------------*/
 
+/*@media (min-width: 768px) {
+        .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+        }
+        
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }*/
+
+.navbar {
+border-radius:0;
+}
+
 span.start {
 	color:white;
 	font-size:2em;

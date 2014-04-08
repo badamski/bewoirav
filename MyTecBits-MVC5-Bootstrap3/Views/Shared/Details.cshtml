@@ -1,98 +1,73 @@
 ﻿@model MyTecBits_MVC5_Bootstrap3.Models.VarioObject
-
+@{
+    Layout="";
+    }
 <div>
-@*    <h4>VarioObject</h4>
-	<hr />*@
-    <dl
-@*        <dt>
-            @Html.DisplayNameFor(model => model.ObjectName)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ObjectName)
-        </dd>
+@*    <h4><i class="glyphicon glyphicon-info-sign"></i>  Szczegóły obiektu:</h4>*@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Filename)
-        </dt>
+    <div class="row">   
+        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Number) </div>
+        <div class="col-md-8 col-xs-8" style="text-align:right;">@Html.DisplayFor(model => model.Number) </div>
+    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Filename)
-        </dd>*@
+    <div class="row">   
+        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.DateCreated) </div>
+        <div class="col-md-8 col-xs-8" style="text-align:right;">@Html.DisplayFor(model => model.DateCreated) </div>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DateCreated)
-        </dt>
+    <div class="row">   
+        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Client) </div>
+        <div class="col-md-8 col-xs-8" style="text-align:right;">@Html.DisplayFor(model => model.Client) </div>
+    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.DateCreated)
-        </dd>
+    <div class="row">   
+        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Value) </div>
+        <div class="col-md-8 col-xs-8" style="text-align:right;">@Html.DisplayFor(model => model.Value) zł</div>
+    </div>
 
-        <dt>
+    <div class="row">   
+        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Deadline) </div>
+        <div class="col-md-8 col-xs-8" style="text-align:right;">@Html.DisplayFor(model => model.Deadline) </div>
+    </div>
+
+@*        <div class="row" style ="margin-top:20px">   
+        <div class="col-md-3 col-xs-4"></div>
+        <div class="col-md-9 col-xs-8" style="text-align:right;"><a href="#" class="btn btn-sm btn-default"> Pokaż więcej szczegółów <i class="glyphicon glyphicon-chevron-right"></i></a> </div>
+    </div>*@
+
+@*          @Html.DisplayFor(model => model.DateCreated)
+
             @Html.DisplayNameFor(model => model.Client)
-        </dt>
 
-        <dd>
             @Html.DisplayFor(model => model.Client)
-        </dd>
 
-        <dt>
             @Html.DisplayNameFor(model => model.Value)
-        </dt>
 
-        <dd>
             @Html.DisplayFor(model => model.Value)
-        </dd>
 
-        <dt>
             @Html.DisplayNameFor(model => model.ValueNetto)
-        </dt>
 
-        <dd>
             @Html.DisplayFor(model => model.ValueNetto)
-        </dd>
 
-        <dt>
             @Html.DisplayNameFor(model => model.Deadline)
-        </dt>
 
-        <dd>
             @Html.DisplayFor(model => model.Deadline)
-        </dd>
 
-        <dt>
             @Html.DisplayNameFor(model => model.WorkflowState)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.WorkflowState)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.EditState)
-        </dt>
 
-        <dd>
             @Html.DisplayFor(model => model.EditState)
-        </dd>
 
-        <dt>
             @Html.DisplayNameFor(model => model.ClientAddress)
-        </dt>
 
-        <dd>
             @Html.DisplayFor(model => model.ClientAddress)
-        </dd>
 
-        <dt>
             @Html.DisplayNameFor(model => model.Number)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Number)
-        </dd>
+            @Html.DisplayFor(model => model.Number)*@
 
-    </dl>
 </div>
 <p>
 @*    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
