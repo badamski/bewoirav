@@ -363,29 +363,20 @@ _varioObjects.Add(
                    Number = "FV/2014/082"
 
                });
-
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 1,  RelatedObjectName = GetVarioObjName(1), CommandName = "Umowa zarejestrowana w Simple", RelatedObjectId = 1, Date = "2014-04-04 14:44", Author = "E.Patyra" });
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 2,  RelatedObjectName = GetVarioObjName(1), CommandName = "Oferta do wysłania", RelatedObjectId = 1, Date = "2014-04-03 16:33", Author = "K. Olejniczak" });
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 3,  RelatedObjectName = GetVarioObjName(1), CommandName = "Umowa zarejestrowana w Simple", RelatedObjectId = 1, Date = "2014-04-02 14:46", Author = "E.Patyra" });
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 4,  RelatedObjectName = GetVarioObjName(1), CommandName = "Umowa zarejestrowana w Simple", RelatedObjectId = 1, Date = "2014-04-02 14:27", Author = "M. Żołądek" });
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 5,  RelatedObjectName = GetVarioObjName(1), CommandName = "Nowy Projekt do realizacji", RelatedObjectId = 1, Date = "2014-03-26 13:11", Author = "K. Olejniczak" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 6,  RelatedObjectName = GetVarioObjName(1), CommandName = "Proszę o uzupełnienie załączonej faktury kosztowej", RelatedObjectId = 1, Date = "2014-03-24 11:26", Author = "Z. Pawlik" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 7,  RelatedObjectName = GetVarioObjName(2), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 2, Date = "2014-03-21 12:13", Author = "Z. Pawlik" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 8,  RelatedObjectName = GetVarioObjName(3), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 3, Date = "2014-03-20 10:58", Author = "K. Olejniczak" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 9,  RelatedObjectName = GetVarioObjName(4), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 4, Date = "2014-03-19 15:30", Author = "M. Żołądek" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 10, RelatedObjectName = GetVarioObjName(5), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 5, Date = "2014-03-19 14:57", Author = "E.Patyra" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 11, RelatedObjectName = GetVarioObjName(6), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 6, Date = "2014-03-19 12:33", Author = "Z. Pawlik" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 12, RelatedObjectName = GetVarioObjName(7), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 7, Date = "2014-03-19 09:56", Author = "K. Olejniczak" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 13, RelatedObjectName = GetVarioObjName(8), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 8, Date = "2014-03-19 09:34", Author = "E.Patyra" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 14, RelatedObjectName = GetVarioObjName(9), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 9, Date = "2014-03-19 08:17", Author = "E.Patyra" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 15, RelatedObjectName = GetVarioObjName(10), CommandName = "Faktura kosztowa do opisu", RelatedObjectId = 10, Date = "2014-03-13 13:59", Author = "M. Żołądek" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 16, RelatedObjectName = GetVarioObjName(11), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 11, Date = "2014-03-11 14:38", Author = "E.Patyra" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 17, RelatedObjectName = GetVarioObjName(12), CommandName = "Faktura kosztowa do opisu", RelatedObjectId = 12, Date = "2014-03-11 14:24", Author = "K. Olejnicza" });
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 18, RelatedObjectName = GetVarioObjName(1), CommandName = "Formularz kooperacji do weryfikacji", RelatedObjectId = 1, Date = "2014-03-03 12:11", Author = "M. Żołądek" });
-            _workflowCommands.Add(new WorkflowCommand() { Id = 19, RelatedObjectName = GetVarioObjName(13), CommandName = "Proszę o uzupełnienie danych na załączonej fakturze kosztowej", RelatedObjectId = 13, Date = "2014-02-12 08:39", Author = "E.Patyra" });
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 20, RelatedObjectName = GetVarioObjName(1), CommandName = "Nowy Projekt do realizacji", RelatedObjectId = 1, Date = "2014-02-12 08:25", Author = "K. Olejniczak" });
-            //_workflowCommands.Add(new WorkflowCommand() { Id = 21, RelatedObjectName = GetVarioObjName(1), CommandName = "Nowy Etap Projektu do realizacji", RelatedObjectId = 1, Date = "2014-02-10 16:59", Author = "Z. Pawlik" });
-        }
+            _workflowCommands.Add(new WorkflowCommand() { Id = 1,  RelatedObjectName = GetVarioObjName(1), CommandName = "Proszę o uzupełnienie załączonej faktury kosztowej", RelatedObjectId = 1, Date = "2014-03-24 11:26", Author = "Z. Pawlik" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 2,  RelatedObjectName = GetVarioObjName(2), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 2, Date = "2014-03-21 12:13", Author = "Z. Pawlik" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 3,  RelatedObjectName = GetVarioObjName(3), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 3, Date = "2014-03-20 10:58", Author = "K. Olejniczak" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 4,  RelatedObjectName = GetVarioObjName(4), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 4, Date = "2014-03-19 15:30", Author = "M. Żołądek" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 5, RelatedObjectName = GetVarioObjName(5), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 5, Date = "2014-03-19 14:57", Author = "E.Patyra" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 6, RelatedObjectName = GetVarioObjName(6), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 6, Date = "2014-03-19 12:33", Author = "Z. Pawlik" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 7, RelatedObjectName = GetVarioObjName(7), CommandName = "Pozycje faktury uzupełnione", RelatedObjectId = 7, Date = "2014-03-19 09:56", Author = "K. Olejniczak" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 8, RelatedObjectName = GetVarioObjName(8), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 8, Date = "2014-03-19 09:34", Author = "E.Patyra" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 9, RelatedObjectName = GetVarioObjName(9), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 9, Date = "2014-03-19 08:17", Author = "E.Patyra" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 10, RelatedObjectName = GetVarioObjName(10), CommandName = "Faktura kosztowa do opisu", RelatedObjectId = 10, Date = "2014-03-13 13:59", Author = "M. Żołądek" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 11, RelatedObjectName = GetVarioObjName(11), CommandName = "Proszę o uzupełnienie danych", RelatedObjectId = 11, Date = "2014-03-11 14:38", Author = "E.Patyra" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 12, RelatedObjectName = GetVarioObjName(12), CommandName = "Faktura kosztowa do opisu", RelatedObjectId = 12, Date = "2014-03-11 14:24", Author = "K. Olejnicza" });
+            _workflowCommands.Add(new WorkflowCommand() { Id = 13, RelatedObjectName = GetVarioObjName(13), CommandName = "Proszę o uzupełnienie danych na załączonej fakturze kosztowej", RelatedObjectId = 13, Date = "2014-02-12 08:39", Author = "E.Patyra" });
+         }
 
         public VarioObject GetObject(int objectId)
         {
