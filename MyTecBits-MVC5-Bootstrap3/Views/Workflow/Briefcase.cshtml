@@ -18,36 +18,16 @@
             </div>
                   <div class="col-md-2">
             <div class="btn-group btn-group-justified" style="margin-top:10px;" >
-                <a data-toggle="collapse" data-parent="#accordion" href="@("#collapse" + varioObject.Id)" class="btn btn btn-info">Szczegóły</a>
+                <a data-toggle="collapse" data-parent="#accordion" href="@("#collapse" + varioObject.Id)" class="btn btn btn-info"> Szczegóły</a>
             </div>
          </div>
       </div>
     </div>   
     <div id="@("collapse" + varioObject.Id)" class="panel-collapse collapse out">
       <div class="panel-body" style ="margin:0 auto;">
-          <div id="myTabContent" class="tab-content">
-              <div class="tab-pane fade active in" id="home">
-                  <div class="row"> 
-                      <div class="col-md-4">    
-                      <div class="metro-tile" style="display:block;height:200px">
-                          <a href="http://variosystems.pl/download/FakturaKosztowa.pdf" style="display:block;height:100%">
-                              <h3>FAKTURA</h3>
-                              <h1><span class="glyphicon glyphicon-file"></span></h1>
-                              <p>@varioObject.ObjectName</p></a></div>
-                      </div>
-                      <div class="col-md-8">
-                                  <div class="row">   
-        <div class="col-md-3 col-xs-4">
-</div>
-
+         @Html.Action("Details", "Workflow", new { id = @varioObject.Id })
        </div>
-                          <div class="row"> <h4><i class="glyphicon glyphicon-info-sign"></i>  Szczegóły obiektu:</h4>@Html.Action("Details", "Workflow", new { id = @varioObject.Id }) </div>
-                         </div>
-                  </div>
-              </div>
-            </div>
       </div>
     </div> 
-</div>    
     }
 </div>

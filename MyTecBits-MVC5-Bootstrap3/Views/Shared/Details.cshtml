@@ -1,36 +1,153 @@
 ﻿@model MyTecBits_MVC5_Bootstrap3.Models.VarioObject
 @{
-    Layout="";
-    }
-<div>
-                
+    Layout = "";
+}
 
-    <div class="row">   
-        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Number) </div>
-        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Number) </div>
+<div class="row">
+
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+        <li class="active"><a href="@("#detailsObject" + Model.Id)" data-toggle="tab">Szczegóły</a></li>
+        <li class=""><a href="@("#linkedObject" + Model.Id)" data-toggle="tab">Pozycje zawartości</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="@("detailsObject" + Model.Id)">
+            <div class="col-md-4">
+                <div class="metro-tile" style="display: block; height: 200px">
+                    <a href="http://variosystems.pl/download/FakturaKosztowa.pdf" style="display: block; height: 100%">
+                        <h3>FAKTURA</h3>
+                        <h1><span class="glyphicon glyphicon-file"></span></h1>
+                        <p>@Model.ObjectName</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <h4><i class="glyphicon glyphicon-info-sign"></i> Szczegóły obiektu:</h4>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-4"><strong>@Html.DisplayNameFor(model => model.Number) </strong></div>
+                        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Number) </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-4"><strong>@Html.DisplayNameFor(model => model.DateCreated)</strong> </div>
+                        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.DateCreated) </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-4"><strong>@Html.DisplayNameFor(model => model.Client) </strong></div>
+                        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Client) </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-4"><strong>@Html.DisplayNameFor(model => model.Value)</strong> </div>
+                        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Value) zł</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-4"><strong>@Html.DisplayNameFor(model => model.Deadline)</strong> </div>
+                        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Deadline) </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade in" id="@("linkedObject" + Model.Id)">
+            <div class="panel-group" id="@("posaccordionObject" + Model.Id)" style="padding: 10px;">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <h4><i class="glyphicon glyphicon-paperclip"></i> poz 14/1/1 - <i class="glyphicon glyphicon-user"></i> E. Żołądek </h4>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="btn-group btn-group-justified" style="margin-top: 10px;">
+                                    <a data-toggle="collapse" data-parent="@("#posaccordionObject" + Model.Id)" href="@("#poscollapse1Object" + Model.Id)" class="btn btn btn-default">Szczegóły</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="@("poscollapse1Object" + Model.Id)" class="panel-collapse collapse out">
+                        <div class="panel-body" style="margin: 0 auto;">
+                                 <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Produkt </strong></div>
+                                    <div class="col-md-9 col-xs-8">INNE OPŁATY O CHARAKTERZE PODATKOWYM</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Ilość</strong> </div>
+                                    <div class="col-md-9 col-xs-8"> 1 </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Wartość </strong></div>
+                                    <div class="col-md-9 col-xs-8">300,00 zł</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-10">
+                                    <h4><i class="glyphicon glyphicon-paperclip"></i> poz 14/1/1 - <i class="glyphicon glyphicon-user"></i> E. Żołądek </h4>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="btn-group btn-group-justified" style="margin-top: 10px;">
+                                    <a data-toggle="collapse" data-parent="@("#posaccordionObject" + Model.Id)" href="@("#poscollapse2Object" + Model.Id)" class="btn btn btn-default">Szczegóły</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="@("poscollapse2Object" + Model.Id)" class="panel-collapse collapse out">
+                        <div class="panel-body" style="margin: 0 auto;">
+                                 <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Produkt </strong></div>
+                                    <div class="col-md-9 col-xs-8">ENERGIA ELEKTRYCZNA
+</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Ilość</strong> </div>
+                                    <div class="col-md-9 col-xs-8"> 1 </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Wartość </strong></div>
+                                    <div class="col-md-9 col-xs-8">50,00 zł</div>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-10">
+                                    <h4><i class="glyphicon glyphicon-paperclip"></i> poz 14/1/1 - <i class="glyphicon glyphicon-user"></i> K. Pawlik </h4>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="btn-group btn-group-justified" style="margin-top: 10px;">
+                                    <a data-toggle="collapse" data-parent="@("#posaccordionObject" + Model.Id)" href="@("#poscollapse3Object" + Model.Id)"class="btn btn btn-default">Szczegóły</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="@("poscollapse3Object" + Model.Id)" class="panel-collapse collapse out">
+                        <div class="panel-body" style="margin: 0 auto;">
+                                 <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Produkt </strong></div>
+                                    <div class="col-md-9 col-xs-8">ENERGIA CIEPLNA</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Ilość</strong> </div>
+                                    <div class="col-md-9 col-xs-8"> 1 </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-4"><strong>Wartość </strong></div>
+                                    <div class="col-md-9 col-xs-8">55,00 zł</div>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-    <div class="row">   
-        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.DateCreated) </div>
-        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.DateCreated) </div>
-    </div>
-
-    <div class="row">   
-        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Client) </div>
-        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Client) </div>
-    </div>
-
-    <div class="row">   
-        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Value) </div>
-        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Value) zł</div>
-    </div>
-
-    <div class="row">   
-        <div class="col-md-3 col-xs-4">@Html.DisplayNameFor(model => model.Deadline) </div>
-        <div class="col-md-9 col-xs-8">@Html.DisplayFor(model => model.Deadline) </div>
-    </div>
-
-@*          @Html.DisplayFor(model => model.DateCreated)
+</div>
+@*<div>
+        @Html.DisplayFor(model => model.DateCreated)
 
             @Html.DisplayNameFor(model => model.Client)
 
@@ -60,10 +177,10 @@
 
             @Html.DisplayNameFor(model => model.Number)
 
-            @Html.DisplayFor(model => model.Number)*@
+            @Html.DisplayFor(model => model.Number)
 
 </div>
 <p>
-@*    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
-@*    @Html.ActionLink("Back to List", "Index")*@
-</p>
+ @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+ @Html.ActionLink("Back to List", "Index")
+</p>*@
