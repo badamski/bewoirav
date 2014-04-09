@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Vario.Web</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -26,7 +26,7 @@
     <ul class="nav navbar-nav">
       <li><a href="@Url.Action("Index", "Workflow")"><span class="glyphicon glyphicon-comment"></span> Polecenia  <span class="badge" style="vertical-align:text-top">13</span></a></li>
       <li><a href="@Url.Action("Search", "Workflow")"><span class="glyphicon glyphicon-search"></span> Szukaj</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Teczka</a></li>
+      <li><a href="@Url.Action("Briefcase", "Workflow")"><span class="glyphicon glyphicon-briefcase"></span> Teczka</a></li>
     </ul>
         @Html.Partial("_LoginPartial")
   </div>

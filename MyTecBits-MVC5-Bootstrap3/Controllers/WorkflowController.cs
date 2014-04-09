@@ -38,6 +38,20 @@ namespace MyTecBits_MVC5_Bootstrap3.Controllers
             return View();
         }
 
+        public ActionResult SearchResults()
+        {
+            var result = _dataSource.GetObjects();
+
+            return View(result.Where(o => o.ObjectName.ToLower().Contains("kosztowa")).Take(5));
+        }
+
+        public ActionResult Briefcase()
+        {
+            var result = _dataSource.GetObjects();
+
+            return View(result.Where(o=> o.Id > 5 && o.Id < 9 ));
+        }
+
         //
         // GET: /Workflow/Create
         public ActionResult Create()

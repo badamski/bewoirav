@@ -10,10 +10,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="text-danger"><i class="glyphicon glyphicon-exclamation-sign"></i> Błąd</h3>
+        <h3 class="text-info"><i class="glyphicon glyphicon-info-sign"></i> Usługa niedostępna</h3>
       </div>
       <div class="modal-body">
-        <h4 >Wykonanie operacji nie powiodło się!</h4>
+        <h4 >Brak możliwości wykonania operacji.</h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<h2><i class="glyphicon glyphicon-comment" style="vertical-align:top"></i> Twoje polecenia (@Model.Count())</h2>
+<h2><i class="glyphicon glyphicon-comment" style="vertical-align:top"></i> Twoje polecenia obiegu (@Model.Count())</h2>
 
 <hr />
 
@@ -37,7 +37,7 @@
                 <h3 style ="margin-top:3px"> @command.CommandName</h3>
 
                  
-             <p style="margin-top:10px"> <a href="http://variosystems.pl/download/FakturaKosztowa.pdf" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-file"></span> @command.RelatedObjectName</a> || @command.Date przez <i class="glyphicon glyphicon-user"></i> @command.Author</p>
+             <p style="margin-top:10px"> <a href="http://variosystems.pl/download/FakturaKosztowa.pdf" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-file"></span> @command.RelatedObjectName</a> <i class="glyphicon glyphicon-calendar"></i> @command.Date - <i class="glyphicon glyphicon-user"></i> @command.Author</p>
             </div>
                   <div class="col-md-4">
             <div class="btn-group btn-group-justified" style="margin-top:10px;" >
