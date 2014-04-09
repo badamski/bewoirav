@@ -4,8 +4,28 @@
     ViewBag.Title = "Polecenia Workflow";
 }
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="text-danger"><i class="glyphicon glyphicon-exclamation-sign"></i> Błąd</h3>
+      </div>
+      <div class="modal-body">
+        <h4 >Wykonanie operacji nie powiodło się!</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <h2><i class="glyphicon glyphicon-comment" style="vertical-align:top"></i> Twoje polecenia (@Model.Count())</h2>
+
 <hr />
+
 <div class="panel-group" id="accordion">
 @foreach (var command in Model)
 {
@@ -17,11 +37,11 @@
                 <h3 style ="margin-top:3px"> @command.CommandName</h3>
 
                  
-             <p style="margin-top:10px"> <a href="#" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-file"></span> @command.RelatedObjectName</a> || @command.Date przez <i class="glyphicon glyphicon-user"></i> @command.Author</p>
+             <p style="margin-top:10px"> <a href="http://variosystems.pl/download/FakturaKosztowa.pdf" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-file"></span> @command.RelatedObjectName</a> || @command.Date przez <i class="glyphicon glyphicon-user"></i> @command.Author</p>
             </div>
                   <div class="col-md-4">
             <div class="btn-group btn-group-justified" style="margin-top:10px;" >
-                <a href="#" class="btn btn-lg btn-info">Otwórz</a>
+                <a href="http://variosystems.pl/download/FakturaKosztowa.pdf" class="btn btn-lg btn-info">Otwórz</a>
                 <a data-toggle="collapse" data-parent="#accordion" href="@("#collapse" + command.Id)" class="btn btn-lg btn-info">Szczegóły</a>
             </div>
          </div>
@@ -34,7 +54,7 @@
                   <div class="row"> 
                       <div class="col-md-4">    
                       <div class="metro-tile" style="display:block;height:200px">
-                          <a href="#" style="display:block;height:100%">
+                          <a href="http://variosystems.pl/download/FakturaKosztowa.pdf" style="display:block;height:100%">
                               <h3>FAKTURA</h3>
                               <h1><span class="glyphicon glyphicon-file"></span></h1>
                               <p>@command.RelatedObjectName</p></a></div>
@@ -44,9 +64,9 @@
         <div class="col-md-3 col-xs-4">
 @*            <a href="#" class="btn btn-sm btn-default"> Więcej szczegółów<i class="glyphicon glyphicon-chevron-right"></i></a>*@
 </div>
-        <div class="col-md-9 col-xs-8" style="text-align:right;">
+@*        <div class="col-md-9 col-xs-8" style="text-align:right;">
                        <a data-toggle="collapse" data-parent="#accordion" href="@("#collapse" + command.Id)" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
-        </div>
+        </div>*@
        </div>
                           <div class="row"> <h4><i class="glyphicon glyphicon-info-sign"></i>  Szczegóły obiektu:</h4>@Html.Action("Details", "Workflow", new { id = command.RelatedObjectId }) </div>
                          </div>
@@ -55,9 +75,9 @@
               </div>
             </div>
          <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Odrzuć</a>
-                <a href="#" class="btn btn btn-info">Do poprawy</a>
-                <a href="#" class="btn btn btn-success">Akceptuj <span class="glyphicon glyphicon-ok"></span></a>
+                <a data-toggle="modal" data-target="#myModal" class="btn btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Odrzuć</a>
+                <a data-toggle="modal" data-target="#myModal" class="btn btn btn-info">Do poprawy</a>
+                <a data-toggle="modal" data-target="#myModal" class="btn btn btn-success">Akceptuj <span class="glyphicon glyphicon-ok"></span></a>
          </div>
       </div>
     </div> 

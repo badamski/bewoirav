@@ -227,6 +227,7 @@
     <Content Include="Views\Home\WorkflowCommands.cshtml" />
     <Content Include="Views\Shared\Details.cshtml" />
     <Content Include="Views\Workflow\Index.cshtml" />
+    <Content Include="Views\Workflow\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

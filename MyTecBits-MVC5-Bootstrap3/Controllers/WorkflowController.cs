@@ -33,6 +33,11 @@ namespace MyTecBits_MVC5_Bootstrap3.Controllers
             return View(result);
         }
 
+        public ActionResult Search()
+        {
+            return View();
+        }
+
         //
         // GET: /Workflow/Create
         public ActionResult Create()
